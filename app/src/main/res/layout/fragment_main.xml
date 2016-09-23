@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.jvolmert.herome.Fragments.MainFragment">
+    tools:context="com.example.jvolmert.herome.Fragments.MainFragment"
+    android:background="@drawable/drawablebg_gradient">
 
 
     <LinearLayout
@@ -39,6 +40,55 @@
             android:layout_gravity="center_horizontal"
             android:background="@drawable/hero_button"
             android:layout_height="50dp"
-            android:textColor="#FAC740" />
+            android:textColor="#FAC740"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/lightning"
+            android:drawableRight="@drawable/itemselected"
+            android:paddingLeft="5dp"
+            android:paddingRight="19dp" />
+
+        <Button
+            android:text="GENETIC MUTATATION"
+            android:layout_width="300dp"
+            android:id="@+id/button2"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/hero_button"
+            android:layout_height="50dp"
+            android:textColor="#FAC740"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/atomic"
+            android:drawableRight="@drawable/itemselected"
+            android:paddingLeft="5dp"
+            android:paddingRight="19dp"
+            android:elevation="0dp" />
+
+        <Button
+            android:text="BORN WITH THEM"
+            android:layout_width="300dp"
+            android:id="@+id/button3"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/hero_button"
+            android:layout_height="50dp"
+            android:textColor="#FAC740"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/rocket"
+            android:drawableRight="@drawable/itemselected"
+            android:paddingLeft="5dp"
+            android:paddingRight="19dp" />
+
+        <Button
+            android:text="CHOOSE POWERS"
+            android:layout_width="300dp"
+            android:id="@+id/button4"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/hero_button"
+            android:layout_height="50dp"
+            android:textColor="#10161D"
+            android:layout_marginTop="15dp"
+            android:drawableRight="@drawable/itemselected"
+            android:paddingLeft="5dp"
+            android:paddingRight="19dp"
+            android:backgroundTint="#FAC740"
+            android:textSize="22sp" />
     </LinearLayout>
 </FrameLayout>
