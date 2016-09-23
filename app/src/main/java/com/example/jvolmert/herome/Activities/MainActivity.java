@@ -8,9 +8,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.jvolmert.herome.Fragments.MainFragment;
+import com.example.jvolmert.herome.Fragments.pickPowerFragment;
 import com.example.jvolmert.herome.R;
 
-public class MainActivity extends AppCompatActivity implements MainFragment.MainFragmentInteractionListener {
+public class MainActivity extends AppCompatActivity implements MainFragment.MainFragmentInteractionListener, pickPowerFragment.pickPowerInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +30,20 @@ public class MainActivity extends AppCompatActivity implements MainFragment.Main
 
     }
 
+    public void pickPowerScrene() {
+
+        pickPowerFragment pickPowerFragment = new pickPowerFragment();
+        // replace old fragment and then move it to the back stack so we don't delete it
+        this.getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, pickPowerFragment).addToBackStack(null).commit();
+
+    }
     @Override
     public void onFragmentInteraction(Uri uri) {
+
+    }
+
+    @Override
+    public void onPickPowerFragmentInteraction(Uri uri) {
 
     }
 }

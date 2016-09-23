@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.support.v4.app.Fragment;
 import android.widget.Button;
 
+import com.example.jvolmert.herome.Activities.MainActivity;
 import com.example.jvolmert.herome.R;
 
 
@@ -84,6 +85,14 @@ public class MainFragment extends Fragment implements View.OnClickListener{
         bornBtn.setOnClickListener(this);
         mutationBtn.setOnClickListener(this);
 
+        chooseBtn.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                MainActivity mainActivity = (MainActivity)getActivity();
+                mainActivity.pickPowerScrene();
+            }
+        });
 
         return view;
     }
