@@ -27,6 +27,7 @@
         <Button
             android:layout_width="300dp"
             android:layout_height="50dp"
+            android:id="@+id/turtleBtn"
             android:text="TURTLE POWER"
             android:drawableLeft="@drawable/turtlepower"
             android:layout_gravity="center_horizontal"
@@ -39,6 +40,7 @@
         <Button
             android:layout_width="300dp"
             android:layout_height="50dp"
+            android:id="@+id/lightningBtn"
             android:text="LIGHTNING"
             android:drawableLeft="@drawable/thorshammer"
             android:paddingLeft="15dp"
@@ -51,6 +53,7 @@
         <Button
             android:layout_width="300dp"
             android:layout_height="50dp"
+            android:id="@+id/supermanBtn"
             android:drawableLeft="@drawable/supermancrest"
             android:text="FLIGHT"
             android:paddingLeft="15dp"
@@ -64,6 +67,7 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:text="WEB SLINGING"
+            android:id="@+id/webBtn"
             android:drawableLeft="@drawable/spiderweb"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
@@ -75,6 +79,7 @@
         <Button
             android:layout_width="300dp"
             android:layout_height="50dp"
+            android:id="@+id/laserBtn"
             android:text="LASER VISION"
             android:drawableLeft="@drawable/laservision"
             android:paddingLeft="15dp"
@@ -87,6 +92,7 @@
         <Button
             android:layout_width="300dp"
             android:layout_height="50dp"
+            android:id="@+id/strengthBtn"
             android:text="SUPER STRENGTH"
             android:drawableLeft="@drawable/superstrength"
             android:paddingLeft="15dp"
