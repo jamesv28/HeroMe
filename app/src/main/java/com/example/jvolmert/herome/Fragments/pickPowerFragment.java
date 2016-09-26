@@ -21,7 +21,7 @@ import com.example.jvolmert.herome.R;
  * Use the {@link pickPowerFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class pickPowerFragment extends Fragment {
+public class pickPowerFragment extends Fragment implements View.OnClickListener{
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -78,9 +78,32 @@ public class pickPowerFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_pick_power, container, false);;
         //  Declare buttons
+        turtleBtn = (Button)view.findViewById(R.id.turtleBtn);
+        lightningBtn = (Button)view.findViewById(R.id.lightningBtn);
+        supermanBtn = (Button)view.findViewById(R.id.supermanBtn);
+        webBtn = (Button)view.findViewById(R.id.webBtn);
+        laserBtn = (Button)view.findViewById(R.id.laserBtn);
+        strengthBtn = (Button)view.findViewById(R.id.strengthBtn);
+        chooseBtn = (Button)view.findViewById(R.id.chooseBtn);
+
+        chooseBtn.setEnabled(false);
+        chooseBtn.getBackground().setAlpha(128);
+
+        //set click listeners
+        turtleBtn.setOnClickListener(this);
+        lightningBtn.setOnClickListener(this);
+        supermanBtn.setOnClickListener(this);
+        webBtn.setOnClickListener(this);
+        laserBtn.setOnClickListener(this);
+        strengthBtn.setOnClickListener(this);
 
 
         return view;
+    }
+
+    @Override
+    public void onClick(View view) {
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event

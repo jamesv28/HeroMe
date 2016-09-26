@@ -125,7 +125,7 @@ public class MainFragment extends Fragment implements View.OnClickListener{
 
 
         btn.setCompoundDrawablesWithIntrinsicBounds(leftDrawable, 0, R.drawable.itemselected, 0);
-        //  create aj drawable if we click
+        //  create a drawable if we click
     }
 
     // TODO: Rename method, update argument and hook method into UI event
